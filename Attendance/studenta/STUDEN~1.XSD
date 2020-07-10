@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="studentdbDataSet" targetNamespace="http://tempuri.org/studentdbDataSet.xsd" xmlns:mstns="http://tempuri.org/studentdbDataSet.xsd" xmlns="http://tempuri.org/studentdbDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="studentdbConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="studentdbConnectionString (Settings)" PropertyReference="ApplicationSettings.StudentAttendanceModule.Properties.Settings.GlobalReference.Default.studentdbConnectionString" Provider="System.Data.OleDb">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="studentTableAdapter" GeneratorDataComponentClassName="studentTableAdapter" Name="student" UserDataComponentName="studentTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="studentdbConnectionString (Settings)" DbObjectName="student" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>SELECT Rollno, name, fname FROM student</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Rollno" DataSetColumn="Rollno" />
+              <Mapping SourceColumn="name" DataSetColumn="name" />
+              <Mapping SourceColumn="fname" DataSetColumn="fname" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="studentdbDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="studentdbDataSet" msprop:Generator_DataSetName="studentdbDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="student" msprop:Generator_UserTableName="student" msprop:Generator_RowDeletedName="studentRowDeleted" msprop:Generator_TableClassName="studentDataTable" msprop:Generator_RowChangedName="studentRowChanged" msprop:Generator_RowClassName="studentRow" msprop:Generator_RowChangingName="studentRowChanging" msprop:Generator_RowEvArgName="studentRowChangeEvent" msprop:Generator_RowEvHandlerName="studentRowChangeEventHandler" msprop:Generator_TablePropName="student" msprop:Generator_TableVarName="tablestudent" msprop:Generator_RowDeletingName="studentRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Rollno" msprop:Generator_UserColumnName="Rollno" msprop:Generator_ColumnPropNameInRow="Rollno" msprop:Generator_ColumnVarNameInTable="columnRollno" msprop:Generator_ColumnPropNameInTable="RollnoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="name" msprop:Generator_UserColumnName="name" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnVarNameInTable="columnname" msprop:Generator_ColumnPropNameInTable="nameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fname" msprop:Generator_UserColumnName="fname" msprop:Generator_ColumnPropNameInRow="fname" msprop:Generator_ColumnVarNameInTable="columnfname" msprop:Generator_ColumnPropNameInTable="fnameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

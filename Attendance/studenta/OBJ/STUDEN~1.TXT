@@ -1,0 +1,11 @@
+bin\Debug\StudentAttendanceModule.exe.config
+bin\Debug\StudentAttendanceModule.exe
+bin\Debug\StudentAttendanceModule.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\StudentAttendanceModule.Properties.Resources.resources
+obj\Debug\StudentAttendanceModule.csproj.GenerateResource.Cache
+obj\Debug\StudentAttendanceModule.exe
+obj\Debug\StudentAttendanceModule.pdb
+obj\Debug\StudentAttendanceModule.frmstudent.resources
+obj\Debug\StudentAttendanceModule.Attendancesheet.resources
+obj\Debug\StudentAttendanceModule.frmmainmenu.resources

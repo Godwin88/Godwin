@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+    </configSections>
+    <connectionStrings>
+        <add name="StudentAttendanceModule.Properties.Settings.studentdbConnectionString"
+            connectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\studentdb.mdb"
+            providerName="System.Data.OleDb" />
+        <add name="StudentAttendanceModule.Properties.Settings.studentdbConnectionString1"
+            connectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\bin\Debug\studentdb.mdb"
+            providerName="System.Data.OleDb" />
+    </connectionStrings>
+</configuration>
